@@ -35,9 +35,7 @@
     </h2>
 
 <p align="center">
-<br>
-  <img src="files/fig_demo.png" alt="Da Vinci Palpation" style="width:350px;">
-
+  <img src="files/fig_demo.png" alt="Da Vinci Palpation" style="width:380px;">
   <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/L561cJh7DLE?autoplay=0&showinfo=0&controls=2&modestbranding=1&rel=0&theme=light" frameborder="10" allowfullscreen></iframe> -->
 </p>  
 
@@ -46,20 +44,38 @@
 
 <p>
   In surgical tumor removal, inaccurate localization can lead to removal of excessive healthy tissue and failure to completely remove cancerous tissue.
-Automated haptic palpation has the potential to precisely estimate the geometry of embedded tumors during robot-assisted  minimally invasive surgery. We formulate the tumor boundary localization problem in terms of Bayesian optimization along implicit curves defined  by  a  Gaussian  Process  representation  of  estimated tissue  stiffness.   We  formulate three palpation algorithms in this context: (1) Expected Variance Reduction (EVR), which emphasizes exploration by minimizing variance, (2) Upper Confidence Bound (UCB), which balances exploration with exploitation using the estimated mean, and Implicit Level Set UCB (ILS-UCB), a variant of UCB that prioritizes sampling near a level set. 
-
-We compare these algorithms in controlled simulation experiments, varying levels of measurement noise and bias.  We find that ILS-UCB significantly outperforms the other algorithms in terms of symmetric difference between tumor boundary estimate and ground truth, reducing error by up to 10x.  In initial physical experiments with a haptic probe and the Intuitive dVRK surgical robot using multiple sample points and a variant of travelling salesman to plan  paths between them, the ILS-UCB algorithm is 4x faster than a raster scan path.
+Automated haptic palpation has the potential to precisely estimate the geometry of embedded tumors during robot-assisted  minimally invasive surgery. We formulate the tumor boundary localization problem in terms of Bayesian optimization along implicit curves defined  by  a  Gaussian  Process  representation  of  estimated tissue  stiffness.   
+<br><br>
+We  formulate three palpation algorithms in this context: (1) Expected Variance Reduction (EVR), which emphasizes exploration by minimizing variance, (2) Upper Confidence Bound (UCB), which balances exploration with exploitation using the estimated mean, and Implicit Level Set UCB (ILS-UCB), a variant of UCB that prioritizes sampling near a level set. 
+<br><br>
+We compare these algorithms in controlled simulation experiments, varying levels of measurement noise and bias.  We find that ILS-UCB significantly outperforms the other algorithms in terms of symmetric difference between tumor boundary estimate and ground truth, reducing error by up to <em>10x</em>.  In initial physical experiments with a haptic probe and the Intuitive dVRK surgical robot using multiple sample points and a variant of travelling salesman to plan  paths between them, the ILS-UCB algorithm is <em>4x</em> faster than a raster scan path.
 </p>
 
+<p align="center">
+  <img src="files/noiselevplots2.png" alt="Results Palpation" style="width:400px;">
+</p>  
 
 <h3>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h3>
 
 <ul>
 <li> 
-<a href="files/garg-case16-gpas.pdf">Tumor Localization using Automated Palpation with Gaussian Process Adaptive Sampling.</a> 
-Animesh Garg, Siddhart Sen, Rishi Kapadia, Yiming Jen, Stephen McKinley, Lauren Miller, Ken Goldberg <br>
-<em> Uncer Review at CASE 2016 </em> </li>
+  <a href="files/garg-case16-gpas.pdf"><b>Tumor Localization using Automated Palpation with Gaussian Process Adaptive Sampling.</b></a><br> 
+  Animesh Garg, Siddhart Sen, Rishi Kapadia, Yiming Jen, Stephen McKinley, Lauren Miller, Ken Goldberg <br>
+  <em> Under Review at <a href="http://case2016.org/">IEEE CASE 2016</a> </em> 
+</li>
+<br>
+<li>
+  <a href="http://goldberg.berkeley.edu/pubs/mckinley-palpation-case2015.pdf"><b>A Disposable Haptic Palpation Probe for Locating Subcutaneous Blood Vessels in Robot-Assisted Minimally Invasive Surgery</b></a>. <br>
+  Stephen McKinley, Animesh Garg, Siddarth Sen, Rishi Kapadia, Adithyavairavan Murali, Kirk Nichols, Susan Lim, Sachin Patil, Pieter Abbeel, Allison M. Okamura, Ken Goldberg. IEEE International Conference on Automation Science and Engineering (CASE). Aug. 2015.
+</li>
+<br>
+<li>
+  <em>Robot-Assisted Surgery: Autonomous Tumor Localization and Extraction: Palpation, Incision, Debridement and Adhesive Closure with the da Vinci Research Kit</em> [<a href="https://youtu.be/YiPq9t0tR3U"><b>Link to Video</b></a>]. <br> 
+  Stephen McKinley, Siddarth Sen, Animesh Garg, Yiming Jen, David Gealy, Pieter Abbeel, Ken Goldberg. Hamlyn Surgical Robotics Conference, London, June 2015.  <font color="red"><em>Best Video Award</em></font>
+
+</li>
+
 </ul>
 
 
