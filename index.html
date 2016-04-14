@@ -31,20 +31,24 @@
         
 <h2>
       <a id="tscdl" class="anchor" href="#tscdl" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-      Tumor  Localization  using  Automated  Palpation  withTwo-Phase  Gaussian  Process  Adaptive  Sampling
-    
+      Tumor Localization using Automated Palpation with Gaussian Process Adaptive Sampling    
     </h2>
 
 <p align="center">
 <br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/L561cJh7DLE?autoplay=0&showinfo=0&controls=2&modestbranding=1&rel=0&theme=light" frameborder="10" allowfullscreen></iframe>
+  <img src="files/fig_demo.png" alt="Da Vinci Palpation" style="width:350px;">
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/L561cJh7DLE?autoplay=0&showinfo=0&controls=2&modestbranding=1&rel=0&theme=light" frameborder="10" allowfullscreen></iframe> -->
 </p>  
 
 <h3>
 <a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h3>
 
 <p>
-  TBA
+  In surgical tumor removal, inaccurate localization can lead to removal of excessive healthy tissue and failure to completely remove cancerous tissue.
+Automated haptic palpation has the potential to precisely estimate the geometry of embedded tumors during robot-assisted  minimally invasive surgery. We formulate the tumor boundary localization problem in terms of Bayesian optimization along implicit curves defined  by  a  Gaussian  Process  representation  of  estimated tissue  stiffness.   We  formulate three palpation algorithms in this context: (1) Expected Variance Reduction (EVR), which emphasizes exploration by minimizing variance, (2) Upper Confidence Bound (UCB), which balances exploration with exploitation using the estimated mean, and Implicit Level Set UCB (ILS-UCB), a variant of UCB that prioritizes sampling near a level set. 
+
+We compare these algorithms in controlled simulation experiments, varying levels of measurement noise and bias.  We find that ILS-UCB significantly outperforms the other algorithms in terms of symmetric difference between tumor boundary estimate and ground truth, reducing error by up to 10x.  In initial physical experiments with a haptic probe and the Intuitive dVRK surgical robot using multiple sample points and a variant of travelling salesman to plan  paths between them, the ILS-UCB algorithm is 4x faster than a raster scan path.
 </p>
 
 
@@ -53,7 +57,7 @@
 
 <ul>
 <li> 
-<a href="files/tba.pdf">Tumor  Localization  using  Automated  Palpation  withTwo-Phase  Gaussian  Process  Adaptive  Sampling.</a> 
+<a href="files/garg-case16-gpas.pdf">Tumor Localization using Automated Palpation with Gaussian Process Adaptive Sampling.</a> 
 Animesh Garg, Siddhart Sen, Rishi Kapadia, Yiming Jen, Stephen McKinley, Lauren Miller, Ken Goldberg <br>
 <em> Uncer Review at CASE 2016 </em> </li>
 </ul>
@@ -61,15 +65,17 @@ Animesh Garg, Siddhart Sen, Rishi Kapadia, Yiming Jen, Stephen McKinley, Lauren 
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-<p><a href="http://animeshgarg.com">Animesh Garg</a>, <a href="https://www.ocf.berkeley.edu/~sanjayk/">Sanjay Krishnan</a>, <a href="http://adithyamurali.com">Adithya Murali</a>,  <a href="http://www.csc.kth.se/~fpokorny/">Florian Pokorny</a><br>
-PIs: <a href="goldberg.berkeley.edu">Ken Goldberg</a>, <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a>, <a href="http://www.cs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+<p><a href="http://animeshgarg.com">Animesh Garg</a>, <a href="https://www.linkedin.com/in/siddarthsen">Siddarth Sen<a>, <a href="#">Rishi Kapadia</a>, <br>
+<a href="https://www.linkedin.com/in/yiming-jen-60b042a7">Yiming Jen</a>,
+<a  href="https://www.linkedin.com/in/mckrobotics">Stephen McKinley</a>,  <a href="http://www.lmiller.me">Lauren Miller</a><br>
+PI: <a href="goldberg.berkeley.edu">Ken Goldberg</a>
 </p>
 
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Please Contact <a href="http://animeshgarg.com">Animesh Garg</a> at <a href="mailto:aniesh.garg@berkeley.edu">animesh.garg@berkeley.edu</a></p>
+<p>Please Contact <a href="http://animeshgarg.com">Animesh Garg</a> at <a href="mailto:animesh.garg@berkeley.edu">animesh.garg@berkeley.edu</a></p>
 
 <hr>
       </section>
